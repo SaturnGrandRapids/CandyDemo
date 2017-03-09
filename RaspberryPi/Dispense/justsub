@@ -1,0 +1,1 @@
+python justSub.py -e a1aqp5k4egmmfe.iot.us-west-2.amazonaws.com -r /home/pi/AWS_IOT_Connect/root-CA.crt -c /home/pi/AWS_IOT_Connect/SaturnPi.cert.pem -k /home/pi/AWS_IOT_Connect/SaturnPi.private.key
