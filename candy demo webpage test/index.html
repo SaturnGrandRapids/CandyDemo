@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('#webCandyBin1').click(function() {
+      var url = 'https://qqv7kisnze.execute-api.us-west-2.amazonaws.com/test/openCandy';
+      var data = {
+        "candyType": "Kalebs cool function1"
+      }
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(data),
+        dataType: 'json',
+        success: function(response) {
+          alert(response.d);
+        },
+        error: function(response) {
+          console.log(response);
+        }
+      });
+
+    });})
+
+  $(document).ready(function(){
+    $('#webCandyBin2').click(function() {
+      var url = 'https://qqv7kisnze.execute-api.us-west-2.amazonaws.com/test/openCandy';
+      var data = {
+        "candyType": "Kaleb's cool function2"
+      }
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(data),
+        dataType: 'json',
+        success: function(response) {
+          alert(response.d);
+        },
+        error: function(response) {
+          console.log(response);
+        }
+      });
+
+    });})
+
+ $(document).ready(function(){
+    $('#webCandyBin3').click(function() {
+      var url = 'https://qqv7kisnze.execute-api.us-west-2.amazonaws.com/test/openCandy';
+      var data = {
+        "candyType": "Kaleb's cool function3"
+      }
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(data),
+        dataType: 'json',
+        success: function(response) {
+          alert(response.d);
+        },
+        error: function(response) {
+          console.log(response);
+        }
+      });
+
+    });})
+
+</script>
+
+
+
+  </head>
+  <body>
+    <p>Hello, I am a candy bot</p>
+
+    <input id="webCandyBin1" type="button" value="Candy Bin 1"  />
+
+    <input id="webCandyBin2" type="button" value="Candy Bin 2" />
+
+    <input id="webCandyBin3" type="button" value="Candy Bin 3" />
+
+  </body>
+</html>
